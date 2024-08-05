@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTitle"
+        android:layout_below="@id/tvTODOLIST"
+        android:layout_width="match_parent"
+        app:boxBackgroundMode="filled"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTitle_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#E91E63"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Title: "/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputContent"
+        app:boxBackgroundMode="filled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtContent_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#E91E63"
+            android:layout_marginRight="20dp"
+            android:hint="Content: "/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputDate"
+        app:boxBackgroundMode="filled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDate_dialog"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#E91E63"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Date: "/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputType"
+        app:boxBackgroundMode="filled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtType_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#E91E63"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Type: "/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnUpdate_dialog"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:backgroundTint="#CF7D05"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnCancel_Dialog"
+            android:layout_width="wrap_content"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E35C5C"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>
